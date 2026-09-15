@@ -1,0 +1,78 @@
+# NAME: Gemini (Google DeepMind)
+# AUTHOR: v2fly/domain-list-community contributors
+# REPO: https://github.com/v2fly/domain-list-community
+# ROOT-SOURCE: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google-gemini
+# SOURCE: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google-deepmind
+# CONVERTED: 2026-09-15
+# FORMAT: Quantumult X native; rule-type,match,AI
+# POLICY: AI
+# HOST: 11
+# HOST-SUFFIX: 30
+# TOTAL: 41
+# 已展开 google-gemini 的 include:google-deepmind 引用。
+# 范围遵循上游，包含 Gemini、AI Studio、NotebookLM、Jules 等 Google AI 服务。
+# 使用前需有名为 AI 的策略组，也可通过订阅行的 force-policy 指定已有策略。
+# 普通域名转为 host-suffix；full: 转为 host，保留精确匹配。
+# 静态快照；上游更新后需重新转换。
+
+# Google DeepMind
+host-suffix,deepmind.com,AI
+host-suffix,deepmind.google,AI
+
+# Google Generative Language API
+host-suffix,geller-pa.googleapis.com,AI
+host-suffix,generativelanguage.googleapis.com,AI
+host-suffix,proactivebackend-pa.googleapis.com,AI
+host-suffix,robinfrontend-pa.googleapis.com,AI
+# Google AI Studio
+host,ai.google.dev,AI
+host,alkalicore-pa.clients6.google.com,AI
+host,alkalimakersuite-pa.clients6.google.com,AI
+host,webchannel-alkalimakersuite-pa.clients6.google.com,AI
+host-suffix,generativeai.google,AI
+host-suffix,makersuite.google.com,AI
+
+host-suffix,ai.studio,AI
+host-suffix,aistudio.google.com,AI
+host-suffix,bard.google.com,AI
+host-suffix,gemini.google,AI
+host-suffix,gemini.google.com,AI
+host-suffix,gemini.gstatic.com,AI
+# Gemini Code Assist
+# https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini
+host,cloudaicompanion.googleapis.com,AI
+host,cloudcode-pa.googleapis.com,AI
+host,daily-cloudcode-pa.googleapis.com,AI
+
+# NotebookLM
+host,notebooklm-pa.googleapis.com,AI
+host,notebooklm.googleapis.com,AI
+host-suffix,notebook.google.com,AI
+host-suffix,notebooklm.google,AI
+host-suffix,notebooklm.google.com,AI
+
+# Jules
+host-suffix,jules.google,AI
+host-suffix,jules.google.com,AI
+
+# Google AI Labs
+host-suffix,labs.google,AI
+host-suffix,labs.google.com,AI
+host-suffix,flow.google,AI
+host-suffix,aisandbox-pa.googleapis.com,AI
+# Android Studio Gemini Code Assist
+host-suffix,aicode.googleapis.com,AI
+host-suffix,aida.googleapis.com,AI
+
+# Opal
+host-suffix,opal.google,AI
+host-suffix,opal.google.com,AI
+
+# Antigravity
+host,antigravity-pa.googleapis.com,AI
+host,antigravity.googleapis.com,AI
+host-suffix,antigravity.google,AI
+host-suffix,antigravity-unleash.goog,AI
+
+# Stitch
+host-suffix,stitch.withgoogle.com,AI

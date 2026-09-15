@@ -1,0 +1,25 @@
+# NAME: Anthropic
+# AUTHOR: v2fly/domain-list-community contributors
+# REPO: https://github.com/v2fly/domain-list-community
+# SOURCE: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic
+# CONVERTED: 2026-09-15
+# FORMAT: Quantumult X native; rule-type,match,AI
+# POLICY: AI
+# HOST: 1
+# HOST-SUFFIX: 7
+# TOTAL: 8
+# 使用前需有名为 AI 的策略组，也可通过订阅行的 force-policy 指定已有策略。
+# 普通域名转为 host-suffix；full: 转为 host 精确匹配。
+# 静态快照；上游更新后需重新转换。
+
+# Main domain / 主域名
+host-suffix,anthropic.com,AI
+host-suffix,clau.de,AI
+host-suffix,claude.ai,AI
+host-suffix,claude.com,AI
+host-suffix,claudemcpclient.com,AI
+host-suffix,claudemcpcontent.com,AI
+host-suffix,claudeusercontent.com,AI
+
+# CDN
+host,servd-anthropic-website.b-cdn.net,AI
