@@ -1,0 +1,48 @@
+# NAME: OpenAI
+# AUTHOR: v2fly/domain-list-community contributors
+# REPO: https://github.com/v2fly/domain-list-community
+# SOURCE: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai
+# CONVERTED: 2026-09-15
+# FORMAT: Quantumult X native; rule-type,match,OpenAI
+# POLICY: OpenAI
+# HOST: 9
+# HOST-SUFFIX: 13
+# HOST-WILDCARD: 1
+# TOTAL: 23
+# 使用前需有名为 OpenAI 的策略组，也可通过订阅行的 force-policy 指定已有策略。
+# 普通域名转为 host-suffix；full: 转为 host；@ads 属性保留为注释。
+# 静态快照；上游更新后需重新转换。
+
+# Main domain / 主域名
+host-suffix,chat.com,OpenAI
+host-suffix,chatgpt.com,OpenAI
+host-suffix,chatgpt.site,OpenAI
+host-suffix,crixet.com,OpenAI
+host-suffix,oaistatic.com,OpenAI
+host-suffix,oaistatsig.com,OpenAI
+host-suffix,oaiusercontent.com,OpenAI
+host-suffix,openai.com,OpenAI
+host-suffix,sora.com,OpenAI
+
+# CDN & API
+host-suffix,openai.com.cdn.cloudflare.net,OpenAI
+host,openaiapi-site.azureedge.net,OpenAI
+host,openaiassets.blob.core.windows.net,OpenAI
+host,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,OpenAI
+host,openaicom.imgix.net,OpenAI
+host,openaicomproductionae4b.blob.core.windows.net,OpenAI
+host,production-openaicom-storage.azureedge.net,OpenAI
+# 原始规则：regexp:^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+# 使用 host-wildcard 近似转换：?* 保留至少一个字符，但不能保留末段仅数字的限制。
+# 仍限定完整主机名的 chatgpt-async-webps-prod- 前缀和 .webpubsub.azure.com 后缀。
+host-wildcard,chatgpt-async-webps-prod-?*-?*.webpubsub.azure.com,OpenAI
+
+# tracking / 以下三条在源文件中带 @ads 属性，仍按 OpenAI 策略分流。
+host,browser-intake-datadoghq.com,OpenAI
+host,o33249.ingest.sentry.io,OpenAI
+host,openai.qualtrics.com,OpenAI
+
+# Advanced Voice / 高级语音
+host-suffix,chatgpt.livekit.cloud,OpenAI
+host-suffix,host.livekit.cloud,OpenAI
+host-suffix,turn.livekit.cloud,OpenAI
