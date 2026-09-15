@@ -1,5 +1,5 @@
 # NAME: China Site
-# DESCRIPTION: 中国域名直连；沿用已有中国分流配置的域名范围。
+# DESCRIPTION: 中国域名直连；沿用已有中国分流配置的域名范围，并包含用户补充的直连域名。
 # SOURCE: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-cn.list
 # UPSTREAM: https://github.com/MetaCubeX/meta-rules-dat
 # SOURCE-SNAPSHOT: 2026-09-15
@@ -7,9 +7,10 @@
 # FORMAT: Quantumult X native; rule-type,match,direct
 # POLICY: direct
 # HOST: 44
-# HOST-SUFFIX: 5305
-# TOTAL: 5349
-# NOTE: 静态快照；后续需更新源数据并重新生成。
+# HOST-SUFFIX: 5319
+# TOTAL: 5363
+# CUSTOM-HOST-SUFFIX: 14
+# NOTE: 静态快照；后续更新源数据并重新生成时，需保留末尾的用户补充规则。
 
 # MetaCubeX geolocation-cn：精确域名和域名后缀。
 host,api.blipsandchitz.me,direct
@@ -5363,3 +5364,19 @@ host-suffix,gaode.com,direct
 host-suffix,autonavi.com,direct
 host-suffix,ctrip.com,direct
 host-suffix,qunar.com,direct
+
+# 用户补充的直连域名（2026-09-15）；同时匹配域名本身及其子域名。
+host-suffix,5jia.cloud,direct
+host-suffix,aaplimg.com,direct
+host-suffix,akamai.net,direct
+host-suffix,bing.com,direct
+host-suffix,bing.net,direct
+host-suffix,cdn-apple.com,direct
+host-suffix,linkedin.com,direct
+host-suffix,live.com,direct
+host-suffix,office.net,direct
+host-suffix,fuyingy.com,direct
+host-suffix,hujt1.com,direct
+host-suffix,j9y48.com,direct
+host-suffix,lhqhth.com,direct
+host-suffix,mzstatic.com,direct
